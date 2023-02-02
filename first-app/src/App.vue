@@ -1,14 +1,9 @@
 <script setup>
-import CitiesList from "./components/CitiesList.vue";
-function onListClick() {
-  alert("CLICK");
-}
-
 </script>
 
 <template>
-  <a href="#" v-on:click="onListClick"><h1>MÉTÉO</h1></a>
-  <router-link to="{ name: 'villes' }">Afficher les villes</router-link>
+  <router-link to="/home"><h1>Home</h1></router-link>
+  <router-link to="/villes"><h1>Nos Villes</h1></router-link>
   <router-view/>
 </template>
 
