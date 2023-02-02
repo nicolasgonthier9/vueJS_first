@@ -8,7 +8,8 @@ function onListClick() {
 
 <template>
   <a href="#" v-on:click="onListClick"><h1>MÉTÉO</h1></a>
-  <CitiesList />
+  <router-link to="{ name: 'villes' }">Afficher les villes</router-link>
+  <router-view/>
 </template>
 
 <style scoped>
