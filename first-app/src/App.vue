@@ -1,23 +1,14 @@
 <script setup>
-import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
+import CitiesList from "./components/CitiesList.vue";
+function onListClick() {
+  alert("CLICK");
+}
+
 </script>
 
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav>
-    </div>
-  </header>
-
-  <RouterView />
+  <a href="#" v-on:click="onListClick"><h1>MÉTÉO</h1></a>
+  <CitiesList />
 </template>
 
 <style scoped>
