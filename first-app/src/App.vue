@@ -1,9 +1,10 @@
 <script setup>
+
 </script>
 
 <template>
   <router-link to="/home"><h1>Home</h1></router-link>
-  <router-link to="/villes"><h1>Nos Villes</h1></router-link>
+  <router-link to="/cities"><h1>Nos Villes</h1></router-link>
   <router-view/>
 </template>
 
@@ -11,11 +12,6 @@
 header {
   line-height: 1.5;
   max-height: 100vh;
-}
-
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
 }
 
 nav {

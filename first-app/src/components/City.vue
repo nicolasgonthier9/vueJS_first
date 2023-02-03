@@ -1,9 +1,9 @@
 <template>
   <ul>
-    <li>{{ this.name }}</li>
-    <li>{{ this.weather }}</li>
-    <li>{{ this.temperature }}</li>
-    <li>{{ this.updatedAt }}</li>
+    <li>{{ city.name }}</li>
+    <li>{{ city.weather }}</li>
+    <li>{{ city.temperature }}</li>
+    <li> Date : {{ city.updatedAt.toLocaleString() }}</li>
   </ul>
 
 </template>
@@ -11,15 +11,9 @@
 <script>
 export default {
   name: "City",
-  data() {
-    return {
-      name: 'Tourcoing', // nom de la ville
-      weather: 'Peu nuageux', // descriptif météo
-      temperature: 20.55, // température en °C
-      updatedAt: new Date() // date de dernière mise à jour
-
-    }
-  },
+  props: {
+    city: ['name', 'weather', 'temperature', 'updatedAt'],
+}
 }
 </script>
 

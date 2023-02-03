@@ -1,5 +1,4 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import App from "../App.vue";
 import CitiesList from "../components/CitiesList.vue";
 import City from "../components/City.vue";
 import HomeView from "../views/HomeView.vue";
@@ -13,13 +12,13 @@ const router = createRouter({
       component: HomeView
     },
     {
-      path: '/villes',
-      name: 'villes',
+      path: '/cities',
+      name: 'cities',
       component: CitiesList
     },
     {
-      path: '/ville',
-      name: 'ville',
+      path: '/city/:id',
+      name: 'city',
       component: City
     },
   ]
