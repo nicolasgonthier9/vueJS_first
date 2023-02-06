@@ -1,22 +1,26 @@
 <template>
   <ul>
-    <li>{{ city.name }}</li>
-    <li>{{ city.weather }}</li>
-    <li>{{ city.temperature }}</li>
-    <li> Date : {{ city.updatedAt.toLocaleString() }}</li>
+    <li>{{ name }}</li>
+    <li>{{ weather }}</li>
+    <li>{{ temperature }}</li>
+    <li> Date : {{ updatedAt }}</li>
   </ul>
-
 </template>
 
 <script>
 export default {
   name: "City",
   props: {
-    city: ['name', 'weather', 'temperature', 'updatedAt'],
+    name: String,
+    weather: String,
+    temperature: Number,
+    updatedAt: String
 }
 }
 </script>
 
 <style scoped>
-
+li {
+  list-style-type: none;
+}
 </style>
